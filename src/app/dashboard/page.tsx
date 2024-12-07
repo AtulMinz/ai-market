@@ -8,6 +8,9 @@ import { Bitcoin, Bot, Database } from 'lucide-react'
 export default function Page() {
     return (
         <MaxWidthWrapper className='py-4'>
+            <div className='pt-2 pb-4 text-2xl'>
+                Welcone, 0x0jsdhbghjbfgjndflgmldf
+            </div>
             <div className='flex flex-row items-center justify-between w-full space-x-4'>
                 <Card className='flex flex-col h-full w-full'>
                     <CardHeader className='flex flex-row items-center justify-between pb-2'>
