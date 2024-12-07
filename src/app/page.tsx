@@ -1,101 +1,93 @@
-import Image from "next/image";
+"use client"
 
-export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+import React from 'react'
+import { Spotlight } from '@/components/ui/spotlight'
+import { Button } from '@/components/ui/button'
+import Link from 'next/link'
+import MaxWidthWrapper from '@/components/MaxWidthWrapper'
+import Image from 'next/image'
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+interface FeatureType {
+  logo: string;
+  title: string;
+  description: string;
+}
+
+const FeatureCard: React.FC<FeatureType> = ({ logo, title, description }) => (
+  <div className='relative w-64 md:w-72 p-6 my-4 bg-gray-200 shadow-xl rounded-3xl'>
+    <div className='absolute flex items-center p-3 rounded-full shadow-xl bg-gradient-to-r from-[#016795] to-[#1E488F] left-4 -top-8'>
+      <Image src={`/assets/home/${logo}`} height={50} width={50} quality={100} alt='img' />
     </div>
-  );
+    <div className='mt-8 text-gray-800 text-left'>
+      <h1 className='my-2 text-xl font-bold'>{title}</h1>
+      <div className='flex space-x-2 font-medium'>
+        <p>{description}</p>
+      </div>
+    </div>
+  </div>
+);
+
+export default function Page() {
+  const features: FeatureType[] = [
+    {
+      logo: 'icons8-dataset-50.png',
+      title: 'Loren Ipsem',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ',
+    },
+    {
+      logo: 'icons8-dataset-50.png',
+      title: 'Loren Ipsem',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ',
+    },
+    {
+      logo: 'icons8-dataset-50.png',
+      title: 'Loren Ipsem',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ',
+    },
+    {
+      logo: 'icons8-dataset-50.png',
+      title: 'Loren Ipsem',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ',
+    }
+  ]
+
+  return (
+    <div>
+      <div className='md:h-[30rem] w-full flex md:items-center md:justify-center antialiased bg-grid-white/[0.02] relative overflow-hidden'>
+        <Spotlight className='-top-40 -left-10 md:-left-32 md:-top-20 h-screen' fill='white' />
+        <Spotlight className='left-80 top-28 h-[80vh] w-[50vw]' fill='blue' />
+        <div className='p-4 max-w-7xl mx-auto relative z-10 w-full pt-8 md:pt-0'>
+          <h1 className='pb-3 text-4xl md:text-6xl font-bold text-center bg-clip-text dark:text-transparent dark:bg-gradient-to-b dark:from-neutral-50 dark:to-neutral-400 bg-opacity-50'>
+            Lorem ipsum dolor sit amet <br /> <span className='italic'>consectetur adipiscing elit</span>
+          </h1>
+          <p className='py-2 font-normal text-lg max-w-4xl text-center mx-auto'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          </p>
+          <div className='flex flex-col md:flex-row space-x-0 space-y-2 md:space-x-2 md:space-y-0 py-2 items-center justify-center'>
+            <Button className='px-10 w-3/4 md:w-auto' asChild>
+              <Link href='/ml-models'>
+                Explore ML Models
+              </Link>
+            </Button>
+
+            <Button variant='outline' className='px-10 w-3/4 md:w-auto' asChild>
+              <Link href='/datasets'>
+                Explore Datasets
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </div>
+
+      <MaxWidthWrapper>
+        <div className='flex items-center justify-center py-6'>
+          <div className='grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+            {features.map((feature, index) => (
+              <FeatureCard key={index} {...feature} />
+            ))}
+          </div>
+        </div>
+      </MaxWidthWrapper>
+    </div>
+  )
 }
