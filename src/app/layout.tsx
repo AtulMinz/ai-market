@@ -4,6 +4,21 @@ import Navbar from "@/components/Navbar";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/sonner"
+import '@coinbase/onchainkit/styles.css';
+import '@rainbow-me/rainbowkit/styles.css';
+import dynamic from 'next/dynamic';
+
+const OnchainProviders = dynamic(
+  () => import('@/components/OnchainProviders'),
+  // {
+  //   ssr: false,
+  // },
+);
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1.0,
+};
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -37,11 +52,13 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />
-          <main className="pt-16">
-            {children}
-          </main>
-          <Toaster />
+          <OnchainProviders>
+            <Navbar />
+            <main className="pt-16">
+              {children}
+            </main>
+            <Toaster />
+          </OnchainProviders>
         </ThemeProvider>
       </body>
     </html>

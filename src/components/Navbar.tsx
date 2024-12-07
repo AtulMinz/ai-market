@@ -6,11 +6,15 @@ import { motion, useScroll, useMotionValueEvent } from 'framer-motion'
 import Link from 'next/link'
 import ModeToggle from './ModeToggle'
 import { Button } from '@/components/ui/button'
+import { useAccount } from 'wagmi';
+import LoginButton from './LoginButton';
+import SignupButton from './SignupButton';
 
 export default function Navbar() {
     const [visible, setVisible] = useState(true);
 
     const { scrollY } = useScroll();
+    const { address } = useAccount();
 
     useMotionValueEvent(scrollY, 'change', (latest) => {
         if (latest > 50) {
@@ -43,21 +47,6 @@ export default function Navbar() {
                 </Link>
 
                 <div className='hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto'>
-                    {/* <div className='md:inline-flex md:flex-row md:ml-auto md:w-auto md:pl-16 w-full md:items-center items-start flex flex-col md:h-auto space-x-2'>
-                        <Link href='/' passHref>
-                            <span className='md:inline-flex md:w-auto w-full px-3 py-2 hover:rounded items-center justify-center hover:text-white hover:bg-primary cursor-pointer'>
-                                About
-                            </span>
-                        </Link>
-                    </div>
-
-                    <div className='md:inline-flex md:flex-row md:ml-auto md:w-auto md:pl-16 w-full md:items-center items-start flex flex-col md:h-auto space-x-2'>
-                        <Link href='/dashboard' passHref>
-                            <span className='md:inline-flex md:w-auto w-full px-3 py-2 hover:rounded items-center justify-center hover:text-white hover:bg-primary cursor-pointer'>
-                                Dashboard
-                            </span>
-                        </Link>
-                    </div> */}
                     <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto lg:space-x-4'>
                         <Button variant='ghost' className='hover:bg-primary hover:text-white text-md' asChild>
                             <Link href='/' passHref>
@@ -83,7 +72,10 @@ export default function Navbar() {
                             </Link>
                         </Button>
 
-                        <Button>Connect Wallet</Button>
+                        <div className="flex items-center gap-3">
+                            <SignupButton />
+                            {!address && <LoginButton />}
+                        </div>
                     </div>
 
                     <div className='flex space-x-2 justify-between items-center ml-2'>
