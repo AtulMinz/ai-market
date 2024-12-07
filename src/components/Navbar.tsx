@@ -67,6 +67,12 @@ export default function Navbar() {
                         </Button>
 
                         <Button variant='ghost' className='hover:bg-primary hover:text-white text-md' asChild>
+                            <Link href='/bet' passHref>
+                                Bet
+                            </Link>
+                        </Button>
+
+                        <Button variant='ghost' className='hover:bg-primary hover:text-white text-md' asChild>
                             <Link href='/dashboard' passHref>
                                 Dashboard
                             </Link>

@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# APP NAME
 
-## Getting Started
+## Tracks
 
-First, run the development server:
+- Base (Build Innovative Consumer Apps on Base)
+- Coinbase Developer Platform (Consumer Crypto Prize, CDP SDK, and OnchainKit Pool Prize)
+- [x] Akave (Store your hackathon project data using Akave)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 💡 Inspiration
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Finding the right ML model for your need is very tough and finding the right dataset for training and building the model is evven tougher. On APP NAME users can come along and share their ML Models and Datasets for other to buy and contribute.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 💻 What it does
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+tldr;
+- Allow user to deploy their ML models and datasets.
+- Other users can come along to contribute to it.
+- People can also buy your ML models.
+- The buy price will be given to the person who deployed it and the contributors.
+- Users can bet against different ML Model to find which one is the best among all and encourage other devs to build and deploy more model on the platform.
+- Request for custom dataset can be confirmed by some sort of ai agents <still figuring this out>
 
-## Learn More
+## 🎯 Ideal User
 
-To learn more about Next.js, take a look at the following resources:
+- New user in the ecosystem.
+- AI/ML Model developer and researchers.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Challenges I ran into
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Completing the project under given time frame.
+- Building on new tech like Akave was bit tough but team helped us to tackel our problem.
