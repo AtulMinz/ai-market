@@ -5,8 +5,8 @@ import MaxWidthWrapper from '@/components/MaxWidthWrapper'
 import { Card, CardContent } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Search, X } from 'lucide-react'
-import Link from 'next/link'
-import { Button } from '@/components/ui/button'
+// import Link from 'next/link'
+// import { Button } from '@/components/ui/button'
 
 export default function Page() {
     return (

@@ -12,12 +12,20 @@ export default function Pages() {
     return (
         <MaxWidthWrapper className='py-4'>
             <Card>
-                <CardContent>
+                <CardContent className='relative'>
                     <div className='flex flex-col space-y-2 pt-8 items-center justify-center'>
                         <div className='text-3xl font-semibold'>
                             Datasets
                         </div>
                         <p>Choose between several datasets and contribute, and sell your datasets.</p>
+                    </div>
+
+                    <div className='absolute top-10 right-10'>
+                        <Button asChild>
+                            <Link href='/datasets/add-datasets'>
+                                Upload Dataset
+                            </Link>
+                        </Button>
                     </div>
 
                     <div className='py-2'>
