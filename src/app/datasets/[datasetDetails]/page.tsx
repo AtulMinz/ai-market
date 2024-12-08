@@ -11,9 +11,9 @@ export default function Page() {
                 <CardContent className='relative'>
                     <div className='flex flex-col space-y-2 py-8 items-center justify-center'>
                         <div className='text-3xl font-semibold'>
-                            Dataset Name
+                            Skin Cancer Dataset
                         </div>
-                        <p>User Address</p>
+                        <p>0x1234...abcd</p>
                     </div>
 
                     <div className='absolute top-10 right-10'>
@@ -26,7 +26,7 @@ export default function Page() {
 
                     <div className='flex flex-col space-y-2'>
                         <div className='font-semibold text-xl'>About Dataset</div>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem deleniti obcaecati nobis iure nemo. Natus asperiores quia suscipit. Expedita autem sequi illum quas. Blanditiis ratione maiores quia maxime dolor neque!</p>
+                        <p>This dataset contains a collection of images of skin lesions, annotated with their corresponding diagnoses. It aims to facilitate the development of machine learning models for skin cancer detection and classification, ultimately contributing to early diagnosis and improved patient outcomes.</p>
                         <div className='font-semibold text-lg'>Total Size: 233kb</div>
                     </div>
                     <div className='pt-2'>

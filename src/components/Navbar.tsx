@@ -42,7 +42,7 @@ export default function Navbar() {
             <nav className='flex items-center py-2 flex-wrap px-2.5 md:px-12 tracking-wider justify-between'>
                 <Link href='/' passHref>
                     <div className='text-3xl flex flex-row items-center justify-start'>
-                        APP NAME
+                        ChainModels
                     </div>
                 </Link>
 

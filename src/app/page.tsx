@@ -31,23 +31,23 @@ export default function Page() {
   const features: FeatureType[] = [
     {
       logo: 'icons8-dataset-50.png',
-      title: 'Loren Ipsem',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ',
+      title: 'Model Collaboration',
+      description: 'ChainModels enables seamless collaboration on machine learning models, allowing users to contribute to existing models and foster innovation.',
     },
     {
       logo: 'icons8-dataset-50.png',
-      title: 'Loren Ipsem',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ',
+      title: 'Dataset Sharing',
+      description: 'ChainModels provides a platform for users to share and discover datasets, making it easier to find the right data for machine learning projects.',
     },
     {
       logo: 'icons8-dataset-50.png',
-      title: 'Loren Ipsem',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ',
+      title: 'Model Monetization',
+      description: 'ChainModels allows users to monetize their machine learning models, enabling creators to earn revenue from their work and incentivizing innovation.',
     },
     {
       logo: 'icons8-dataset-50.png',
-      title: 'Loren Ipsem',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ',
+      title: 'Model Comparison',
+      description: 'ChainModels enables users to compare and bet on different machine learning models, promoting healthy competition and driving progress in the field.',
     }
   ]
 
@@ -58,10 +58,10 @@ export default function Page() {
         <Spotlight className='left-80 top-28 h-[80vh] w-[50vw]' fill='blue' />
         <div className='p-4 max-w-7xl mx-auto relative z-10 w-full pt-8 md:pt-0'>
           <h1 className='pb-3 text-4xl md:text-6xl font-bold text-center bg-clip-text dark:text-transparent dark:bg-gradient-to-b dark:from-neutral-50 dark:to-neutral-400 bg-opacity-50'>
-            Lorem ipsum dolor sit amet <br /> <span className='italic'>consectetur adipiscing elit</span>
+            Welcome to ChainModels <br /> <span className='italic'>where you can deploy, collaborate, monetize, and engage in model comparisons</span>
           </h1>
           <p className='py-2 font-normal text-lg max-w-4xl text-center mx-auto'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ChainModels is a collaborative platform where users can share their machine learning models and datasets, making it easier for others to discover, purchase, and contribute to innovative solutions. Join us in fostering a community that empowers developers and researchers to leverage shared resources for greater impact in the AI/ML landscape.
           </p>
           <div className='flex flex-col md:flex-row space-x-0 space-y-2 md:space-x-2 md:space-y-0 py-2 items-center justify-center'>
             <Button className='px-10 w-3/4 md:w-auto' asChild>

@@ -17,7 +17,7 @@ export default function Pages() {
                         <div className='text-3xl font-semibold'>
                             ML Models
                         </div>
-                        <p>Choose between several models and contribute, and sell your models.</p>
+                        <p>Explore a diverse range of models, contribute to existing ones, and monetize your own creations.</p>
                     </div>
 
                     <div className='absolute top-10 right-10'>
@@ -41,12 +41,12 @@ export default function Pages() {
                     <div className='grid grid-flow-row grid-cols-4 py-6 gap-4 items-center justify-between'>
                         <div className='border-2 rounded-xl px-2 py-6 flex flex-col items-center justify-between'>
                             <div className='flex flex-col space-y-3'>
-                                <div className='text-xl text-center'>Model Name</div>
-                                <div className='text-lg pb-2'>User Address <span className='pl-2 text-sm'>(23kb)</span></div>
+                                <div className='text-xl text-center'>Skin Cancer Classifier</div>
+                                <div className='text-lg pb-2'>0x1234...abcd <span className='pl-2 text-sm'>(25kb)</span></div>
                             </div>
                             <div className='flex w-3/4'>
                                 <Button className='w-full' asChild>
-                                    <Link href={`/ml-models/zbxhcvbdhxv`}>
+                                    <Link href={`/ml-models/skin-cancer-classifier`}>
                                         Explore
                                     </Link>
                                 </Button>
@@ -55,12 +55,12 @@ export default function Pages() {
 
                         <div className='border-2 rounded-xl px-2 py-6 flex flex-col items-center justify-between'>
                             <div className='flex flex-col space-y-3'>
-                                <div className='text-xl text-center'>Model Name</div>
-                                <div className='text-lg pb-2'>User Address <span className='pl-2 text-sm'>(23kb)</span></div>
+                                <div className='text-xl text-center'>Stock Trading Bot</div>
+                                <div className='text-lg pb-2'>0x5678...efgh <span className='pl-2 text-sm'>(30kb)</span></div>
                             </div>
                             <div className='flex w-3/4'>
                                 <Button className='w-full' asChild>
-                                    <Link href={`/ml-models/zbxhcvbdhxv`}>
+                                    <Link href={`/ml-models/stock-trading-bot`}>
                                         Explore
                                     </Link>
                                 </Button>
@@ -69,12 +69,12 @@ export default function Pages() {
 
                         <div className='border-2 rounded-xl px-2 py-6 flex flex-col items-center justify-between'>
                             <div className='flex flex-col space-y-3'>
-                                <div className='text-xl text-center'>Model Name</div>
-                                <div className='text-lg pb-2'>User Address <span className='pl-2 text-sm'>(23kb)</span></div>
+                                <div className='text-xl text-center'>Image Recognition Model</div>
+                                <div className='text-lg pb-2'>0x9abc...ijkl <span className='pl-2 text-sm'>(20kb)</span></div>
                             </div>
                             <div className='flex w-3/4'>
                                 <Button className='w-full' asChild>
-                                    <Link href={`/ml-models/zbxhcvbdhxv`}>
+                                    <Link href={`/ml-models/image-recognition-model`}>
                                         Explore
                                     </Link>
                                 </Button>
@@ -83,12 +83,12 @@ export default function Pages() {
 
                         <div className='border-2 rounded-xl px-2 py-6 flex flex-col items-center justify-between'>
                             <div className='flex flex-col space-y-3'>
-                                <div className='text-xl text-center'>Model Name</div>
-                                <div className='text-lg pb-2'>User Address <span className='pl-2 text-sm'>(23kb)</span></div>
+                                <div className='text-xl text-center'>Sentiment Analysis Tool</div>
+                                <div className='text-lg pb-2'>0xmnop...qrst <span className='pl-2 text-sm'>(28kb)</span></div>
                             </div>
                             <div className='flex w-3/4'>
                                 <Button className='w-full' asChild>
-                                    <Link href={`/ml-models/zbxhcvbdhxv`}>
+                                    <Link href={`/ml-models/sentiment-analysis-tool`}>
                                         Explore
                                     </Link>
                                 </Button>

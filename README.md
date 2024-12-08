@@ -1,4 +1,4 @@
-# APP NAME
+# ChainModels
 
 ## Tracks
 
@@ -8,24 +8,25 @@
 
 ## 💡 Inspiration
 
-Finding the right ML model for your need is very tough and finding the right dataset for training and building the model is evven tougher. On APP NAME users can come along and share their ML Models and Datasets for other to buy and contribute.
+Finding the right machine learning model for your needs can be challenging, and sourcing the appropriate datasets for training and building those models is even tougher. ChainModels provides a collaborative platform where users can share their machine learning models and datasets, making it easier for others to discover, purchase, and contribute to innovative solutions. Join us in fostering a community that empowers developers and researchers to leverage shared resources for greater impact in the AI/ML landscape.
 
 ## 💻 What it does
 
-tldr;
-- Allow user to deploy their ML models and datasets.
-- Other users can come along to contribute to it.
-- People can also buy your ML models.
-- The buy price will be given to the person who deployed it and the contributors.
-- Users can bet against different ML Model to find which one is the best among all and encourage other devs to build and deploy more model on the platform.
-- Request for custom dataset can be confirmed by some sort of ai agents <still figuring this out>
+ChainModels enables users to:
+- Put their machine learning models and datasets seamlessly.
+- Collaborate with others by allowing contributions to existing models.
+- Monetize their models, with earnings shared between the original deployer and contributors.
+- Engage in model comparisons by betting on different ML models to identify the best performers, encouraging further development and deployment.
+<!-- - Request custom datasets, facilitated by AI agents (details are still being finalized). -->
 
 ## 🎯 Ideal User
 
-- New user in the ecosystem.
-- AI/ML Model developer and researchers.
+- **New users** looking to explore the ecosystem of machine learning and AI.
+- **AI/ML model developers** seeking a platform to showcase their work and collaborate with others.
+- **Researchers** interested in accessing diverse datasets and models to enhance their projects.
+- **Entrepreneurs** aiming to monetize their machine learning innovations and connect with contributors.
 
 ## Challenges I ran into
 
-- Completing the project under given time frame.
-- Building on new tech like Akave was bit tough but team helped us to tackel our problem.
+- Completing the project within the given timeframe proved to be a significant challenge.
+- Navigating new technologies, such as Akave, was initially difficult, but the team's support helped us tackle these obstacles effectively.

@@ -17,7 +17,7 @@ export default function Pages() {
                         <div className='text-3xl font-semibold'>
                             Datasets
                         </div>
-                        <p>Choose between several datasets and contribute, and sell your datasets.</p>
+                        <p>Explore a diverse range of datasets, contribute to existing ones, and monetize your own datasets.</p>
                     </div>
 
                     <div className='absolute top-10 right-10'>
@@ -38,15 +38,16 @@ export default function Pages() {
                         </div>
                     </div>
 
+
                     <div className='grid grid-flow-row grid-cols-4 py-6 gap-4 items-center justify-between'>
                         <div className='border-2 rounded-xl px-2 py-6 flex flex-col items-center justify-between'>
                             <div className='flex flex-col space-y-3'>
-                                <div className='text-xl text-center'>Dataset Name</div>
-                                <div className='text-lg pb-2'>User Address <span className='pl-2 text-sm'>(23kb)</span></div>
+                                <div className='text-xl text-center'>Skin Cancer Dataset</div>
+                                <div className='text-lg pb-2'>0x1234...abcd <span className='pl-2 text-sm'>(23kb)</span></div>
                             </div>
                             <div className='flex w-3/4'>
                                 <Button className='w-full' asChild>
-                                    <Link href={`/datasets/zbxhcvbdhxv`}>
+                                    <Link href={`/datasets/skin-cancer-dataset`}>
                                         Explore
                                     </Link>
                                 </Button>
@@ -55,12 +56,12 @@ export default function Pages() {
 
                         <div className='border-2 rounded-xl px-2 py-6 flex flex-col items-center justify-between'>
                             <div className='flex flex-col space-y-3'>
-                                <div className='text-xl text-center'>Dataset Name</div>
-                                <div className='text-lg pb-2'>User Address <span className='pl-2 text-sm'>(23kb)</span></div>
+                                <div className='text-xl text-center'>Breast Cancer Dataset</div>
+                                <div className='text-lg pb-2'>0x5678...efgh <span className='pl-2 text-sm'>(23kb)</span></div>
                             </div>
                             <div className='flex w-3/4'>
                                 <Button className='w-full' asChild>
-                                    <Link href={`/datasets/zbxhcvbdhxv`}>
+                                    <Link href={`/datasets/breast-cancer-dataset`}>
                                         Explore
                                     </Link>
                                 </Button>
@@ -69,12 +70,12 @@ export default function Pages() {
 
                         <div className='border-2 rounded-xl px-2 py-6 flex flex-col items-center justify-between'>
                             <div className='flex flex-col space-y-3'>
-                                <div className='text-xl text-center'>Dataset Name</div>
-                                <div className='text-lg pb-2'>User Address <span className='pl-2 text-sm'>(23kb)</span></div>
+                                <div className='text-xl text-center'>Diabetes Prediction Dataset</div>
+                                <div className='text-lg pb-2'>0x9abc...ijkl <span className='pl-2 text-sm'>(23kb)</span></div>
                             </div>
                             <div className='flex w-3/4'>
                                 <Button className='w-full' asChild>
-                                    <Link href={`/datasets/zbxhcvbdhxv`}>
+                                    <Link href={`/datasets/diabetes-prediction-dataset`}>
                                         Explore
                                     </Link>
                                 </Button>
@@ -83,12 +84,12 @@ export default function Pages() {
 
                         <div className='border-2 rounded-xl px-2 py-6 flex flex-col items-center justify-between'>
                             <div className='flex flex-col space-y-3'>
-                                <div className='text-xl text-center'>Dataset Name</div>
-                                <div className='text-lg pb-2'>User Address <span className='pl-2 text-sm'>(23kb)</span></div>
+                                <div className='text-xl text-center'>Heart Disease Dataset</div>
+                                <div className='text-lg pb-2'>0xmnop...qrst <span className='pl-2 text-sm'>(23kb)</span></div>
                             </div>
                             <div className='flex w-3/4'>
                                 <Button className='w-full' asChild>
-                                    <Link href={`/datasets/zbxhcvbdhxv`}>
+                                    <Link href={`/datasets/heart-disease-dataset`}>
                                         Explore
                                     </Link>
                                 </Button>
